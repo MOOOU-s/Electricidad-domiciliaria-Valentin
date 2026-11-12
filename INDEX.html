@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Valentín | Electricidad Domiciliaria en Miramar y Zona</title>
+    <meta name="description" content="Servicios de electricidad domiciliaria por Valentín. Instalación y armado de tableros, ampliaciones eléctricas, urgencias y mantenimiento en general. ¡Contactanos por WhatsApp!">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           VARIABLES CSS REUTILIZABLES (PALETA ATLA: #314595, #223488, #ec9731, #ffffff)
+           ========================================================================== */
+        :root {
+            /* Colores Principales de la Paleta ATLA */
+            --color-primario: #314595;     /* Azul Medio Institucional */
+            --color-secundario: #223488;   /* Azul Profundo para contrastes y hover */
+            --color-acento: #ec9731;       /* Naranja Ámbar Energía */
+            --color-acento-hover: #d88320; /* Naranja Ámbar más intenso al pasar el mouse */
+            --color-blanco: #ffffff;
+            --color-fondo: #f4f6fb;        /* Fondo claro con un sutil matiz azulado */
+            --color-texto: #1e293b;
+            --color-texto-suave: #5b677d;
+            
+            /* Tipografías */
+            --fuente-titulos: 'Montserrat', sans-serif;
+            --fuente-texto: 'Open Sans', sans-serif;
+            
+            /* Bordes y Sombras */
+            --border-radius: 8px;
+            --shadow-sm: 0 2px 6px rgba(34, 52, 136, 0.08);
+            --shadow-md: 0 6px 16px rgba(34, 52, 136, 0.14);
+            --shadow-lg: 0 12px 28px rgba(34, 52, 136, 0.22);
+            --transition: all 0.3s ease;
+        }
+
+        /* ==========================================================================
+           RESET & ESTILOS GENERALES
+           ========================================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-texto);
+            color: var(--color-texto);
+            background-color: var(--color-fondo);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--fuente-titulos);
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--color-secundario);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-acento);
+            color: var(--color-blanco);
+            box-shadow: 0 4px 14px rgba(236, 151, 49, 0.38);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-acento-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(236, 151, 49, 0.5);
+        }
+
+        .btn-azul {
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+        }
+
+        .btn-azul:hover {
+            background-color: var(--color-secundario);
+            transform: translateY(-2px);
+        }
+
+        .text-center { text-align: center; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background-color: rgba(236, 151, 49, 0.15);
+            color: #b86d14;
+            border: 1px solid rgba(236, 151, 49, 0.45);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .section-subtitle {
+            color: var(--color-texto-suave);
+            max-width: 620px;
+            margin: 0 auto 50px auto;
+            font-size: 1.05rem;
+        }
+
+        /* ==========================================================================
+           1. TOP BAR FINA
+           ========================================================================== */
+        .top-bar {
+            background-color: var(--color-secundario);
+            color: var(--color-blanco);
+            padding: 9px 0;
+            font-size: 0.85rem;
+            border-bottom: 3px solid var(--color-acento);
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar-info {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .top-bar-info i {
+            color: var(--color-acento);
+        }
+
+        .top-bar-link {
+            color: var(--color-blanco);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+
+        .top-bar-link i {
+            color: #25D366;
+            font-size: 1rem;
+        }
+
+        .top-bar-link:hover {
+            color: var(--color-acento);
+        }
+
+        /* ==========================================================================
+           2. HEADER STICKY
+           ========================================================================== */
+        .main-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--color-blanco);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background-color: var(--color-primario);
+            color: var(--color-acento);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--color-secundario);
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            color: var(--color-acento);
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--color-primario);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--color-acento);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--color-secundario);
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           3. HERO SECTION
+           ========================================================================== */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--color-blanco) 0%, #e9edf8 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: var(--color-secundario);
+        }
+
+        .hero-title span {
+            color: var(--color-acento);
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--color-texto-suave);
+            margin-bottom: 30px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            border-bottom: 5px solid var(--color-acento);
+        }
+
+        /* ==========================================================================
+           4. SERVICIOS
+           ========================================================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background-color: var(--color-blanco);
+            border-radius: var(--border-radius);
+            padding: 35px 30px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid var(--color-primario);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-top-color: var(--color-acento);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background-color: rgba(49, 69, 149, 0.1);
+            color: var(--color-primario);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 22px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background-color: var(--color-acento);
+            color: var(--color-blanco);
+        }
+
+        .service-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            color: var(--color-texto-suave);
+            font-size: 0.95rem;
+        }
+
+        .guarantee-banner {
+            background: linear-gradient(90deg, var(--color-secundario) 0%, var(--color-primario) 100%);
+            color: var(--color-blanco);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-left: 6px solid var(--color-acento);
+        }
+
+        .guarantee-banner-text h3 {
+            color: var(--color-blanco);
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .guarantee-banner-text p {
+            color: #e2e8f0;
+        }
+
+        /* ==========================================================================
+           5. GALERÍA DE TRABAJOS (MOSAICO 8 IMÁGENES)
+           ========================================================================== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            height: 220px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        /* ==========================================================================
+           6. SOBRE NOSOTROS
+           ========================================================================== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--color-primario);
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+            color: var(--color-texto-suave);
+        }
+
+        .about-highlight {
+            font-weight: 700;
+            color: var(--color-secundario);
+            border-left: 4px solid var(--color-acento);
+            padding: 12px 15px;
+            background-color: rgba(236, 151, 49, 0.1);
+            margin: 20px 0;
+        }
+
+        /* ==========================================================================
+           7. POR QUÉ ELEGIRNOS
+           ========================================================================== */
+        .why-us {
+            background-color: #e9edf8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background-color: var(--color-blanco);
+            padding: 30px 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 3px solid var(--color-primario);
+        }
+
+        .feature-icon {
+            font-size: 2.2rem;
+            color: var(--color-acento);
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: var(--color-texto-suave);
+        }
+
+        /* ==========================================================================
+           8. TESTIMONIOS
+           ========================================================================== */
+        .rating-summary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 auto 40px auto;
+            background-color: var(--color-blanco);
+            padding: 15px 30px;
+            border-radius: 50px;
+            width: fit-content;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #dce3f2;
+        }
+
+        .stars {
+            color: var(--color-acento);
+            font-size: 1.2rem;
+        }
+
+        .rating-score {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--color-secundario);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-card {
+            background-color: var(--color-blanco);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--color-primario);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--color-texto-suave);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-family: var(--fuente-titulos);
+        }
+
+        .author-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .author-info span {
+            font-size: 0.8rem;
+            color: var(--color-texto-suave);
+        }
+
+        /* ==========================================================================
+           9. MAPA EMBEBIDO
+           ========================================================================== */
+        .map-section {
+            line-height: 0;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 360px;
+            border: 0;
+        }
+
+        /* ==========================================================================
+           10. BANNER CTA FINAL
+           ========================================================================== */
+        .final-cta {
+            background: linear-gradient(rgba(34, 52, 136, 0.92), rgba(49, 69, 149, 0.94)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-blanco);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            color: var(--color-blanco);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .final-cta p {
+            font-size: 1.1rem;
+            color: #f1f5f9;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ==========================================================================
+           11. FOOTER
+           ========================================================================== */
+        .main-footer {
+            background-color: var(--color-secundario);
+            color: #dce3f2;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--color-acento);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--color-blanco);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col p {
+            margin-bottom: 12px;
+        }
+
+        .footer-col i {
+            color: var(--color-acento);
+            margin-right: 6px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            font-size: 0.85rem;
+        }
+
+        /* ==========================================================================
+           12. BOTÓN FLOTANTE WHATSAPP CON BURBUJA
+           ========================================================================== */
+        .whatsapp-float-container {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .whatsapp-chat-bubble {
+            background-color: var(--color-blanco);
+            padding: 12px 18px;
+            border-radius: 18px;
+            border-bottom-right-radius: 4px;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: var(--color-secundario);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid var(--color-acento);
+            animation: pulse-bubble 3s infinite;
+            position: relative;
+        }
+
+        .whatsapp-btn-float {
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--color-blanco);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.45);
+            transition: var(--transition);
+        }
+
+        .whatsapp-btn-float:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse-bubble {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* ==========================================================================
+           RESPONSIVE DESIGN
+           ========================================================================== */
+        @media (max-width: 768px) {
+            .hero-grid, .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background-color: var(--color-blanco);
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: var(--shadow-md);
+                display: none;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .top-bar .container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .guarantee-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .whatsapp-chat-bubble {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. TOP BAR FINA -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fa-solid fa-bolt"></i> Instalaciones Seguras y Prolijas</span>
+                <span><i class="fa-solid fa-location-dot"></i> Miramar y Zona</span>
+            </div>
+            <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20necesito%20consultar%20por%20un%20trabajo%20de%20electricidad" target="_blank" class="top-bar-link">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Directo: 2291 41-8234
+            </a>
+        </div>
+    </div>
+
+    <!-- 2. HEADER STICKY -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#inicio" class="logo-container">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="logo-text">
+                    Valentín
+                    <span>Electricidad Domiciliaria</span>
+                </div>
+            </a>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#galeria" class="nav-link">Trabajos</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#por-que-elegirnos" class="nav-link">Por qué elegirme</a></li>
+                <li><a href="#testimonios" class="nav-link">Opiniones</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fa-solid fa-shield-halved"></i> Trabajos Garantizados
+                    </div>
+                    <h1 class="hero-title">
+                        Electricidad <span>Domiciliaria</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Soluciones eléctricas seguras, prolijas y confiables para tu hogar o comercio. Armado de tableros, ampliaciones y mantenimiento general por <strong>Valentín</strong>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20quiero%20pedir%20un%20presupuesto%20de%20electricidad" target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i> Pedir Presupuesto
+                        </a>
+                        <a href="#servicios" class="btn btn-azul">Ver Servicios</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Electricista trabajando en tablero eléctrico domiciliario" class="hero-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICIOS -->
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Servicios Eléctricos</h2>
+                <p class="section-subtitle">Atención personalizada para resolver fallas, renovar instalaciones antiguas o proyectar nuevas conexiones en tu propiedad.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1: Tableros -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3 class="service-title">Tableros Eléctricos</h3>
+                    <p class="service-desc">Armado, recambio y ordenamiento de tableros principales y seccionales. Instalación de llaves térmicas, disyuntores diferenciales y protectores de tensión.</p>
+                </div>
+                <!-- Servicio 2: Ampliaciones -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-plug-circle-plus"></i></div>
+                    <h3 class="service-title">Ampliaciones y Circuitos</h3>
+                    <p class="service-desc">Tendido de nuevas líneas independientes para aires acondicionados, cocinas, quinchos, talleres o habitaciones nuevas con cálculo de carga adecuado.</p>
+                </div>
+                <!-- Servicio 3: Servicios en General -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 class="service-title">Servicios en General</h3>
+                    <p class="service-desc">Detección y reparación de cortocircuitos, fugas a tierra, cambio de tomas, llaves de luz, colocación de luminarias interior/exterior y puesta a tierra.</p>
+                </div>
+            </div>
+
+            <!-- Banner de Garantía -->
+            <div class="guarantee-banner">
+                <div class="guarantee-banner-text">
+                    <h3>Seguridad y Prolijidad en cada Instalación</h3>
+                    <p>Trabajamos cumpliendo las normas de seguridad eléctrica para proteger tu hogar y tus electrodomésticos.</p>
+                </div>
+                <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20tengo%20una%20consulta%20el%C3%A9ctrica" target="_blank" class="btn btn-primary">Consultar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GALERÍA DE TRABAJOS (MOSAICO 8 IMÁGENES) -->
+    <section id="galeria" class="section-padding" style="background-color: var(--color-blanco);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Trabajos Realizados</h2>
+                <p class="section-subtitle">Detalles de armado de tableros, cableado estructurado e iluminación residencial.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558402529-d2638a7023e9?auto=format&fit=crop&w=500&q=80" alt="Armado de tablero eléctrico con térmicas" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=500&q=80" alt="Medición y diagnóstico eléctrico" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=500&q=80" alt="Instalación eléctrica domiciliaria" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&w=500&q=80" alt="Colocación de luminarias LED" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=500&q=80" alt="Cableado y conexiones seguras" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=500&q=80" alt="Tablero de distribución domiciliario" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=80" alt="Mantenimiento preventivo eléctrico" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=80" alt="Ampliación de red eléctrica en obra" loading="lazy">
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20vi%20tu%20p%C3%A1gina%20y%20quiero%20coordinar%20una%20visita" target="_blank" class="btn btn-azul">
+                    <i class="fa-brands fa-whatsapp"></i> Coordinar Visita Técnica
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1621905252472-943afaa20e20?auto=format&fit=crop&w=800&q=80" alt="Valentín Electricista Domiciliario" class="about-image" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <div class="badge"><i class="fa-solid fa-user-gear"></i> Atención Directa</div>
+                    <h2 class="section-title">Sobre Valentín</h2>
+                    <p>Brindo un servicio integral de <strong>Electricidad Domiciliaria</strong> enfocado en ofrecer soluciones duraderas, prolijas y sin vueltas para cada cliente.</p>
+                    
+                    <div class="about-highlight">
+                        "La electricidad no admite improvisaciones: cada tablero y cada cableado se realiza priorizando la seguridad de tu familia y el correcto funcionamiento de tus equipos."
+                    </div>
+
+                    <p>Ya sea que necesites modernizar un tablero antiguo con protecciones adecuadas, realizar una ampliación en tu vivienda o solucionar un problema eléctrico puntual, te asesoro con claridad desde el primer contacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. POR QUÉ ELEGIRNOS -->
+    <section id="por-que-elegirnos" class="section-padding why-us">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Por Qué Elegirme</h2>
+                <p class="section-subtitle">Compromiso, responsabilidad y trabajo bien hecho en cada visita.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="feature-title">Máxima Seguridad</h3>
+                    <p class="feature-desc">Dimensionamiento correcto de cables y protecciones térmicas y diferenciales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                    <h3 class="feature-title">Prolijidad Total</h3>
+                    <p class="feature-desc">Terminaciones limpias, tableros ordenados e identificados circuito por circuito.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3 class="feature-title">Respuesta Rápida</h3>
+                    <p class="feature-desc">Atención ágil por WhatsApp para coordinar visitas y resolver imprevistos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3 class="feature-title">Presupuesto Claro</h3>
+                    <p class="feature-desc">Asesoramiento honesto sobre materiales necesarios y costos antes de empezar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIOS -->
+    <section id="testimonios" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Opiniones de Clientes</h2>
+                <p class="section-subtitle">La confianza de los vecinos que ya realizaron sus trabajos eléctricos con Valentín.</p>
+            </div>
+
+            <div class="rating-summary">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-score">5.0 / 5.0</div>
+                <span style="color: var(--color-texto-suave); font-size: 0.9rem;">(Clientes satisfechos)</span>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Me armó todo el tablero nuevo porque saltaba la térmica cada vez que prendía el aire. Súper prolijo, puntual y explicó todo perfecto."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CR</div>
+                        <div class="author-info">
+                            <h4>Carlos R.</h4>
+                            <span>Cambio de Tablero</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Hicimos la ampliación eléctrica para un quincho y luces exteriores. Trabajó rápido, limpio y con materiales de primera."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SL</div>
+                        <div class="author-info">
+                            <h4>Silvina L.</h4>
+                            <span>Ampliación Domiciliaria</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Excelente atención. Tenía una fuga que me hacía saltar el disyuntor y la encontró enseguida. Muy recomendable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <h4>Jorge M.</h4>
+                            <span>Reparación Eléctrica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. MAPA EMBEBIDO -->
+    <section class="map-section" id="ubicacion">
+        <iframe 
+            class="map-container"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50155.83983692229!2d-57.87675915!3d-38.26877355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958510602087449d%3A0x1d1b1d707938840!2sMiramar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Zona de cobertura Valentín Electricidad Domiciliaria">
+        </iframe>
+    </section>
+
+    <!-- 10. BANNER CTA FINAL -->
+    <section id="contacto" class="section-padding final-cta">
+        <div class="container">
+            <h2>¿Necesitás un Electricista de Confianza?</h2>
+            <p>Escribime por WhatsApp para asesorarte sobre tableros, ampliaciones o cualquier arreglo eléctrico en tu hogar.</p>
+            <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20necesito%20hacerte%20una%20consulta%20por%20un%20trabajo%20el%C3%A9ctrico" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 36px;">
+                <i class="fa-brands fa-whatsapp"></i> Contactar a Valentín (2291 41-8234)
+            </a>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Valentín | Electricidad</h4>
+                    <p>Servicios de electricidad domiciliaria: tableros eléctricos, ampliaciones, reparaciones e instalaciones seguras y prolijas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios Principales</h4>
+                    <p><i class="fa-solid fa-check"></i> Armado y recambio de tableros</p>
+                    <p><i class="fa-solid fa-check"></i> Ampliaciones eléctricas</p>
+                    <p><i class="fa-solid fa-check"></i> Servicios eléctricos en general</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto Directo</h4>
+                    <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 2291 41-8234</p>
+                    <p><i class="fa-solid fa-phone"></i> Teléfono: (02291) 41-8234</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Miramar y zona de influencia</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Valentín - Electricidad Domiciliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 12. BOTÓN FLOTANTE WHATSAPP CON BURBUJA -->
+    <div class="whatsapp-float-container">
+        <div class="whatsapp-chat-bubble">
+            <i class="fa-solid fa-bolt" style="color: var(--color-acento);"></i> ¡Hola! ¿Necesitás presupuesto eléctrico?
+        </div>
+        <a href="https://wa.me/5492291418234?text=Hola%20Valent%C3%ADn,%20quiero%20consultar%20por%20un%20servicio%20de%20electricidad" target="_blank" class="whatsapp-btn-float" aria-label="Contactar a Valentín por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT VANILLA -->
+    <script>
+        // Año dinámico en footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menú Mobile Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = hamburgerBtn.querySelector('i');
+            if(navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Cerrar menú mobile al hacer click en un enlace
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if(icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
